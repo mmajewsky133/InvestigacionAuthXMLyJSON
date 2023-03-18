@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginMethodFragment">
+
+    <fragment
+        android:id="@+id/firebaseLoginFragment"
+        android:name="edu.uca.innovatech.investigacionauthxmlyjson.FirebaseLoginFragment"
+        android:label="fragment_firebase_login"
+        tools:layout="@layout/fragment_firebase_login" >
+        <action
+            android:id="@+id/action_firebaseLoginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SQLLoginFragment"
+        android:name="edu.uca.innovatech.investigacionauthxmlyjson.SQLLoginFragment"
+        android:label="fragment_s_q_l_login"
+        tools:layout="@layout/fragment_s_q_l_login" >
+        <action
+            android:id="@+id/action_SQLLoginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginMethodFragment"
+        android:name="edu.uca.innovatech.investigacionauthxmlyjson.LoginMethodFragment"
+        android:label="fragment_login_method"
+        tools:layout="@layout/fragment_login_method" >
+        <action
+            android:id="@+id/action_loginMethodFragment_to_SQLLoginFragment"
+            app:destination="@id/SQLLoginFragment" />
+        <action
+            android:id="@+id/action_loginMethodFragment_to_firebaseLoginFragment"
+            app:destination="@id/firebaseLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="edu.uca.innovatech.investigacionauthxmlyjson.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_JSONFragment"
+            app:destination="@id/JSONFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_XMLFragment"
+            app:destination="@id/XMLFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_loginMethodFragment"
+            app:destination="@id/loginMethodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/JSONFragment"
+        android:name="edu.uca.innovatech.investigacionauthxmlyjson.JSONFragment"
+        android:label="fragment_j_s_o_n"
+        tools:layout="@layout/fragment_j_s_o_n" />
+    <fragment
+        android:id="@+id/XMLFragment"
+        android:name="edu.uca.innovatech.investigacionauthxmlyjson.XMLFragment"
+        android:label="fragment_x_m_l"
+        tools:layout="@layout/fragment_x_m_l" />
+</navigation>
