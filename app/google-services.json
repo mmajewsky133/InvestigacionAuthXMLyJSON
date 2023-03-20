@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "595699222157",
+    "project_id": "pruebaauth-ec75a",
+    "storage_bucket": "pruebaauth-ec75a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595699222157:android:18d9d0d1e688f4b2ba44c4",
+        "android_client_info": {
+          "package_name": "edu.uca.innovatech.investigacionauthxmlyjson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595699222157-eropopoqaoro8puvmmarldho1o3kktlv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyButYM9vo8-Ah03EvDp6oGn3GQgE7ta8Wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595699222157-eropopoqaoro8puvmmarldho1o3kktlv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
