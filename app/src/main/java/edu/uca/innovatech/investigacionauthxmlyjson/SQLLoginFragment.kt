@@ -41,10 +41,7 @@ class SQLLoginFragment : Fragment() {
             if (loginSuccessful) {
                 it.findNavController().navigate(R.id.action_SQLLoginFragment_to_menuFragment)
             } else {
-                Toast.makeText(
-                    activity?.applicationContext, "Credenciales incorrectas...",
-                    Toast.LENGTH_LONG
-                ).show()
+                Toast.makeText(context, "Credenciales incorrectas...", Toast.LENGTH_LONG).show()
             }
         }
     }
