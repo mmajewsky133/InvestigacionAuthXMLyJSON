@@ -37,10 +37,7 @@ class FirebaseLoginFragment : Fragment() {
             val user = binding.etUsername.text.toString()
             val pw = binding.etPassword.text.toString()
 
-            println("$user + $pw")
-
             if (user.isNotEmpty() && pw.isNotEmpty()) {
-                println("tan llenos")
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(user, pw).addOnCompleteListener{
                     if (it.isSuccessful) {
                         Toast.makeText(context,"Login correcto...",Toast.LENGTH_LONG).show()

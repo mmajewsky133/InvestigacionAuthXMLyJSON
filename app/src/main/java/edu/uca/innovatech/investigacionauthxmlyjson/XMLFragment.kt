@@ -50,7 +50,6 @@ class XMLFragment : Fragment() {
             Request.Method.GET, url,
             { response -> //Devuelve la response del url
                 try {
-                    println(response)
                     try {
                         var datos = ""
                         val factory = XmlPullParserFactory.newInstance()

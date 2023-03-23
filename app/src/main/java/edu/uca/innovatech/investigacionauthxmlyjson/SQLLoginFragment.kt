@@ -47,8 +47,6 @@ class SQLLoginFragment : Fragment() {
     }
 
     private fun verifyCredentials(user: String, pw: String): Boolean {
-        val validity = false
-
         try {
             val query: PreparedStatement =
                 connectionSQL.dbConn()?.prepareStatement("SELECT * FROM users WHERE username=?")!!
@@ -63,10 +61,10 @@ class SQLLoginFragment : Fragment() {
 
         } catch (ex: SQLException) {
             println("false por exception")
-            return validity
+            return false
         }
         println("false generico")
-        return validity
+        return false
     }
 
     override fun onDestroyView() {

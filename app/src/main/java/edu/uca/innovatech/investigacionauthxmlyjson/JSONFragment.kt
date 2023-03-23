@@ -38,6 +38,7 @@ class JSONFragment : Fragment() {
             cargarDatosDesdeUrl(binding.editTextUrl.text.toString())
         }
     }
+
     private fun cargarDatosDesdeUrl(url: String) {
         //Crea una una solicitud usando Volley
         val queue = Volley.newRequestQueue(context)
@@ -58,7 +59,7 @@ class JSONFragment : Fragment() {
                     Toast.makeText(context, "Done...", Toast.LENGTH_SHORT).show()
                 } catch (e: JSONException) {
                     e.printStackTrace()
-                    Toast.makeText(context, "Error en la solicitud...", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Error en el objeto JSON...", Toast.LENGTH_LONG).show()
                 }
             }) { error -> println(error.message) }
 
